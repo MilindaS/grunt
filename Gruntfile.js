@@ -54,12 +54,23 @@ module.exports = function(grunt) {
                     'dist/js/main.js': ['dist/js/main.js']
                 }
             }
+        },
+        cssmin: {
+          options: {
+            shorthandCompacting: false,
+            roundingPrecision: -1
+          },
+          target: {
+            files: {
+              'dist/css/style.min.css': ['src/css/style.css']
+            }
+          }
         }
     })
 
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     //grunt.registerTask('watch', ['watch']);
     grunt.registerTask('default', ['concat']);
 }
