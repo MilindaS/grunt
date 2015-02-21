@@ -1,0 +1,19 @@
+{
+  "name": "grunt",
+  "version": "0.0.0",
+  "homepage": "https://github.com/MilindaS/collegedrifters",
+  "authors": [
+    "Milinda <rockmakas@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-autosize": "https://github.com/jackmoore/autosize.git#~1.18.9"
+  }
+}
